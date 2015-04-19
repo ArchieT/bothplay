@@ -1,0 +1,6 @@
+PyDejavu
+pyaudio
+mysqldb
+pydub
+numpy
+scipy
