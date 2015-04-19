@@ -32,4 +32,4 @@ for track in search:
 	tf.close()
 	tp = temp.name
 	djv.fingerprint_file(tp,song_name=track.stream_url)
-	song = djv.recognize(MicrophoneRecognizer,seconds=10)
+song = djv.recognize(MicrophoneRecognizer,seconds=10)
