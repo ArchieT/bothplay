@@ -12,7 +12,6 @@ djv = Dejavu({
 })
 def dajcyfry(text):
 	def czycyfra(char):
-		#print char
 		assert type(char)=='str' or type(char)==str or len(char)==1
 		try: intchar=int(char) ; print intchar
 		except ValueError: return False
@@ -31,13 +30,7 @@ for track in search:
 	print urlstr
 	urlnum = dajcyfry(urlstr)
 	track = urllib2.urlopen(scclient.get(track.stream_url,allow_redirects=False).location)
-	#temp = tempfile.NamedTemporaryFile()
-	#tf = temp.file
-	#tf.write(track.read())
-	#tf.close()
-	#tp = temp.name
 	tf = open('/tmp/temp.music','w')
 	tf.write(track.read())
 	tf.close()
 	djv.fingerprint_file('/tmp/temp.music',song_name=urlnum)
-#song = djv.recognize(MicrophoneRecognizer,seconds=10)
