@@ -33,4 +33,4 @@ for track in search:
 	tf = open('/tmp/temp.music','w')
 	tf.write(track.read())
 	tf.close()
-	djv.fingerprint_file('/tmp/temp.music',song_name=urlnum)
+	djv.fingerprint_file('/tmp/temp.music',song_name='soundcloud-'+urlnum)

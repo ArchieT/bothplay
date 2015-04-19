@@ -8,4 +8,5 @@ djv = djlv({
 		"db": "dejavu"
 	}
 })
-print djv.recognize(MicrophoneRecognizer,seconds=10)
+song = djv.recognize(MicrophoneRecognizer,seconds=10)
+print song
